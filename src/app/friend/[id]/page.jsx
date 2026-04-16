@@ -1,3 +1,4 @@
+import FriendDetailsBtn from "@/components/FriendDetailsBtn/FriendDetailsBtn";
 import Image from "next/image";
 
 import {
@@ -14,17 +15,13 @@ async function getFriend(id) {
     cache: "no-store",
   });
   const data = await res.json();
-  console.log(data);
 
   return data.find((f) => f.id === parseInt(id));
 }
 
 export default async function FriendDetails({ params }) {
-  console.log(params);
   const { id } = await params;
-  console.log(id);
   const friend = await getFriend(id);
-  console.log(friend);
   if (!friend) return <p>Friend not found</p>;
 
   return (
@@ -107,7 +104,7 @@ export default async function FriendDetails({ params }) {
               Quick Check-In
             </h3>
 
-            <div className="grid grid-cols-3 gap-4">
+            {/* <div className="grid grid-cols-3 gap-4">
               <button className="bg-white shadow cursor-pointer rounded-xl p-6 flex flex-col items-center hover:bg-gray-50">
                 <FiPhone size={22} />
                 <span className="mt-2 text-sm">Call</span>
@@ -122,7 +119,9 @@ export default async function FriendDetails({ params }) {
                 <FiVideo size={22} />
                 <span className="mt-2 text-sm">Video</span>
               </button>
-            </div>
+            </div> */}
+
+            <FriendDetailsBtn friend={friend} />
           </div>
         </div>
 

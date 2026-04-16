@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { TimelineProvider } from "@/context/TimelineContext";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -30,7 +32,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col bg-[#e9e9e9]">
         <Navbar/>
-        {children}
+         <TimelineProvider>
+          {children}
+          <Toaster position="top-right" />
+        </TimelineProvider>
 
         <Footer/>
 

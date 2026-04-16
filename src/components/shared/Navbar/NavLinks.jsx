@@ -18,13 +18,13 @@ const NavLinks = () => {
         <IoHomeOutline /> Home
       </Link>
       <Link
-        href="timeline"
+        href="/timeline"
         className={`font-semibold px-4 py-2 flex items-center gap-2 ${pathname === "/timeline" ? "bg-[#244d3f]  rounded text-white" : "text-[#64748b] bg-white"}`}
       >
         <MdAccessTime /> Timeline
       </Link>
       <Link
-        href="stats"
+        href="/stats"
         className={`font-semibold px-4 py-2 flex items-center gap-2 ${pathname === "/stats" ? "bg-[#244d3f]  rounded text-white" : "text-[#64748b] bg-white"}`}
       >
         <ImStatsDots /> Stats
