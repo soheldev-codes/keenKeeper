@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hasan",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "arif.hasan@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied Computer Science together at university. Used to code and play FIFA all night.",
+    "goal": 14,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "My school best friend. We still share memes and talk about life regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Siam Ahmed",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "siam.ahmed@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Met at the gym. We motivate each other to stay consistent and healthy.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Farhana Rahman",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "farhana.rahman@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["office", "colleague"],
+    "bio": "Worked together at my previous job. Great at teamwork and always supportive.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Tanvir Hossain",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "tanvir.hossain@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["freelance", "client"],
+    "bio": "Met through freelancing projects. Now we collaborate on web development work.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Mithila Chowdhury",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "mithila.chy@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend"],
+    "bio": "Family friend since childhood. Always checks in during festivals and special days.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Uddin",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "rakib.uddin@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "project partner"],
+    "bio": "We built multiple academic projects together. Haven’t talked since graduation.",
+    "goal": 14,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 8,
+    "name": "Sharmeen Akter",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "sharmeen.akter@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor", "childhood friend"],
+    "bio": "Grew up in the same neighborhood. Still meet occasionally during holidays.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
+  }
+]
