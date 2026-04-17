@@ -3,9 +3,7 @@ import React from "react";
 import FriendCard from "../FriendCard/FriendCard";
 
 async function getFriends() {
-  const res = await fetch("http://localhost:3000/friends.json", {
-    cache: "no-store", // optional (for fresh data)
-  });
+  const res = await fetch("/friends.json");
   return res.json();
 }
 
