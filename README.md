@@ -10,8 +10,8 @@ It ensures you never lose touch with your important people by providing reminder
 
 ## 🚀 Live Demo
 
-🔗 Live Link: _(Add your deployed link here)_
-🔗 GitHub Repo: _[https://github.com/soheldev-codes/keenKeeper]_(https://github.com/soheldev-codes/keenKeeper)
+🔗 Live Link: [https://keen-keeper-roan.vercel.app/]_(https://keen-keeper-roan.vercel.app/)
+🔗 GitHub Repo: [https://github.com/soheldev-codes/keenKeeper]_(https://github.com/soheldev-codes/keenKeeper)
 
 ---
 
