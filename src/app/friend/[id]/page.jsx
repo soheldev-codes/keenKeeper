@@ -28,7 +28,7 @@ export default async function FriendDetails({ params }) {
     <div className="min-h-screen bg-gray-100 p-6 md:p-10">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
         {/* LEFT PROFILE CARD */}
-        <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
+        <div className="bg-white rounded-2xl p-6 shadow-sm text-center flex flex-col items-center justify-center">
           <Image
             src={friend.picture}
             alt={friend.name}
@@ -45,14 +45,14 @@ export default async function FriendDetails({ params }) {
 
           <div className="mt-2">
             <span className="px-3 py-1 text-xs rounded-full bg-green-200 text-green-800">
-              {friend?.tags?.[1].toUpperCase()}
+              {friend?.tags?.[1]?.toUpperCase()}
             </span>
           </div>
 
-          <p className="italic text-gray-500 mt-4">{friend.bio}</p>
+          <p className="italic text-gray-500 mt-4">{friend?.bio}</p>
 
           <p className="text-sm text-gray-400 mt-2">
-            Preferred: {friend.email}
+            Preferred: {friend?.email}
           </p>
         </div>
 
@@ -62,21 +62,21 @@ export default async function FriendDetails({ params }) {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="bg-white rounded-xl p-5 shadow-sm text-center">
               <h3 className="text-3xl font-bold text-green-700">
-                {friend.days_since_contact}
+                {friend?.days_since_contact}
               </h3>
               <p className="text-gray-500 text-sm">Days Since Contact</p>
             </div>
 
             <div className="bg-white rounded-xl p-5 shadow-sm text-center">
               <h3 className="text-3xl font-bold text-green-700">
-                {friend.goal}
+                {friend?.goal}
               </h3>
               <p className="text-gray-500 text-sm">Goal (Days)</p>
             </div>
 
             <div className="bg-white rounded-xl p-5 shadow-sm text-center">
               <h3 className="text-3xl font-bold text-green-700">
-                {friend.next_due_date}
+                {friend?.next_due_date}
               </h3>
               <p className="text-gray-500 text-sm">Next Due</p>
             </div>
@@ -93,7 +93,7 @@ export default async function FriendDetails({ params }) {
                 <span className="font-semibold text-black">30 days</span>
               </p>
             </div>
-            <button className="px-4 py-1 border rounded-md text-sm hover:bg-gray-100">
+            <button className="px-4 py-1 shadow cursor-pointer rounded-md text-sm hover:bg-gray-100">
               Edit
             </button>
           </div>
@@ -103,23 +103,6 @@ export default async function FriendDetails({ params }) {
             <h3 className="font-semibold text-green-800 mb-4">
               Quick Check-In
             </h3>
-
-            {/* <div className="grid grid-cols-3 gap-4">
-              <button className="bg-white shadow cursor-pointer rounded-xl p-6 flex flex-col items-center hover:bg-gray-50">
-                <FiPhone size={22} />
-                <span className="mt-2 text-sm">Call</span>
-              </button>
-
-              <button className="bg-white shadow cursor-pointer rounded-xl p-6 flex flex-col items-center hover:bg-gray-50">
-                <FiMessageSquare size={22} />
-                <span className="mt-2 text-sm">Text</span>
-              </button>
-
-              <button className="bg-white shadow cursor-pointer rounded-xl p-6 flex flex-col items-center hover:bg-gray-50">
-                <FiVideo size={22} />
-                <span className="mt-2 text-sm">Video</span>
-              </button>
-            </div> */}
 
             <FriendDetailsBtn friend={friend} />
           </div>
