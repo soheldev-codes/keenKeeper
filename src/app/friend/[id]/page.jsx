@@ -11,9 +11,7 @@ import {
 } from "react-icons/fi";
 
 async function getFriend(id) {
-  const res = await fetch("https://keen-keeper-roan.vercel.app/friends.json", {
-    cache: "no-store",
-  });
+  const res = await fetch("https://keen-keeper-roan.vercel.app/friends.json");
   const data = await res.json();
 
   return data.find((f) => f.id === parseInt(id));

@@ -3,9 +3,7 @@ import React from "react";
 import FriendCard from "../FriendCard/FriendCard";
 
 async function getFriends() {
-  const res = await fetch("https://keen-keeper-roan.vercel.app/friends.json", {
-    cache: "no-store",
-  });
+  const res = await fetch("https://keen-keeper-roan.vercel.app/friends.json");
   return res.json();
 }
 
@@ -13,7 +11,7 @@ const Friends = async () => {
   const friends = await getFriends();
 
   return (
-    <div className=" mt-20 w-7xl   mx-auto p-4">
+    <div className=" mt-20 m-w-7xl   mx-auto p-4">
       <h2 className="pb-8 text-2xl font-semibold">Your Friends</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
