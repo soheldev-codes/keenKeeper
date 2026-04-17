@@ -5,3 +5,7 @@
     dark --prefersdark,
     cupcake;
 }
+
+body {
+  font-family: var(--font-geist-sans);
+}

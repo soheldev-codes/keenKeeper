@@ -1,9 +1,10 @@
 import React from "react";
 import NavLinks from "./NavLinks";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-100 sticky top-0 shadow-sm">
       <nav className="navbar container mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -31,7 +32,9 @@ const Navbar = () => {
               <NavLinks />
             </ul>
           </div>
-          <a className=" font-bold text-xl">KeenKeeper</a>
+          <Link href="/" className=" font-bold text-xl">
+            KeenKeeper
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

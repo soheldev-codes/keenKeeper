@@ -12,9 +12,9 @@ export default function FriendCard({ friend }) {
 
   return (
     <Link className="cursor-pointer" href={`/friend/${friend.id}`}>
-      <div className="bg-gray-100 rounded-3xl p-4 py-10 text-center shadow-lg   ">
+      <div className="bg-white rounded-3xl p-4 py-10 text-center shadow-lg   ">
         {/* Profile Image */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center w-[80] h-[80] mx-auto mb-6">
           <Image
             src={friend.picture}
             alt={friend.name}
