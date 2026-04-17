@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#e9e9e9]">
+      <body className="min-h-full flex flex-col bg-[#faf8fc]">
         <Navbar/>
          <TimelineProvider>
           {children}
